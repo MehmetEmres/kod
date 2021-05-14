@@ -99,6 +99,7 @@ digitalWrite(LED,1);
 //analogWrite(pervane,200);
 
 }
+//Buraya açıklama gelecek
 if (durak == 0)
 {
     duz_yol_durum = 0;
