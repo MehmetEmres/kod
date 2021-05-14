@@ -107,6 +107,7 @@ if (durak == 0)
     doksan_durum = 0;
     durak = 1;
 }
+//Buraya açıklama gelecek
 if (durak == 1 && doksan_durum == 0)
 {
     doksan();
