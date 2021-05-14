@@ -99,7 +99,54 @@ digitalWrite(LED,1);
 //analogWrite(pervane,200);
 
 }
-
+if (durak == 0)
+{
+    duz_yol_durum = 0;
+    duz_yol(200, 150, 20, 20, 0, 127);
+    doksan_durum = 0;
+    durak = 1;
+}
+if (durak == 1 && doksan_durum == 0)
+{
+    doksan();
+}
+if (durak == 1 && doksan_durum == 1)
+{
+    duz_yol_durum = 0;
+    duz_yol(100, 150, 20, 20, 0, 127);
+    doksan_durum = 0;
+    durak = 2;
+}
+if (durak == 2 && doksan_durum == 0)
+{
+    doksan();
+}
+if (durak == 1 && doksan_durum == 1)
+{
+    duz_yol_durum = 0;
+    duz_yol(100, 150, 20, 20, 0, 127);
+    doksan_durum = 0;
+    durak = 2;
+}
+if (durak == 2 && doksan_durum == 0)
+{
+    doksan();
+}
+if (durak == 2 && doksan_durum == 1)
+{
+    duz_yol_durum = 0;
+    duz_yol(200, 150, 20, 20, 0, 127);
+    doksan_durum = 0;
+    durak = 3;
+    if (durak == 3 && doksan_durum == 0)
+    {
+        doksan();
+    }
+    if (durak == 3 && doksan_durum == 1)
+    {
+        duz_yol_durum = 0;
+        duz_yol(300, 150, 20, 20, 0, 127);
+    }
 
 
 
